@@ -1,0 +1,39 @@
+.foto
+ {
+float: left;
+margin-right: 10px;
+}
+.isi {
+    margin-right:30px;
+    height: 100px;
+
+}
+
+.ataspojok
+{
+    text-align: right;
+    float: right;
+}
+
+ .atttachments
+ {
+display: flex;
+width: 100px;
+ }
+ .link
+ {
+   margin-right: 100px;
+     float:right;
+     width: 300px;
+     height: 180px;  }
+
+     
+body {
+    margin-left:  140px;
+    margin-right: 140px;
+}
+.foto-kanan 
+{
+    position: absolute;
+
+}
