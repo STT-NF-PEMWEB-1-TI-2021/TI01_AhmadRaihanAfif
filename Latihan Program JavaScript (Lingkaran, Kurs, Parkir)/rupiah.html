@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="nilai" onchange="hitung_dolar()">
+    <input type="text" id="uang" value="dolar">
+    <input type="text" id="rupiah">
+    <script>
+        function hitung_dolar(){
+            if (uang.value =="dolar"){
+                let nilai = Number(document.getElementById("nilai").value);
+                let uang= 14650
+                let jumlah = nilai * uang
+                document.getElementById("rupiah").value=jumlah
+            }
+    }
+    </script>
+</body>
+</html>
