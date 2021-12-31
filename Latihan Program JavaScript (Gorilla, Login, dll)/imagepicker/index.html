@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Picker</title>
+</head>
+<body>
+<fieldset>
+    <label for="bts">Bangtan Seonyondan</label>
+    <select id="bts">
+        <option value="Dr.strange">Dr.strange</option>
+        <option value="Camptain america">Camptain america</option>
+        <option value="Thor">Thor</option>
+        <option value="Spider Man">Spider Man</option>
+        <option value="Iron Man">Iron Man</option>
+    </select>
+    <button onclick="cetakGambar()">Cetak Gambar</button>
+    
+    <br><img id="gambar" src="">
+</fieldset>
+<script>
+    function cetakGambar() {
+        const bts = document.getElementById('bts');
+        const gambar = document.getElementById('gambar');
+    
+        if (bts.value === 'Dr.strange') {
+            gambar.src = 'https://i.pinimg.com/originals/9e/85/7b/9e857bbbffad9f03fb4ebcaa5fc28038.jpg'
+        }
+        if (bts.value === 'Camptain america') {
+            gambar.src = 'https://i.pinimg.com/originals/e6/15/26/e615265e4ea82f4d8c6702fa7da16d8b.jpg'
+        }
+        if (bts.value === 'Thor') {
+            gambar.src = 'https://i.pinimg.com/originals/72/47/fd/7247fd9bce7a46fb67a8f8449293e0ce.jpg'
+        }
+        if (bts.value === 'Spider Man') {
+            gambar.src = 'https://i.pinimg.com/originals/9b/6f/d6/9b6fd6c919106a699721332f4aeb7ce9.jpg'
+         }
+        if (bts.value === 'Iron Man') {
+            gambar.src = 'https://i.pinimg.com/originals/00/45/59/00455928da31f5fe307462167e1e42d8.png'
+        }
+    }
+</script>
+</body>
+</html>
